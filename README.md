@@ -11,6 +11,11 @@ SR driving X-chromosomes found in 20-30% of wild indivs ([Reinhardt et al. 2014]
 Sympatric cryptic species in the same area. 
 
 
+Meiotic drive is ancestral but lost in the sister species
+
+![alt_txt][Fig1]
+
+[Fig1]:https://user-images.githubusercontent.com/12142475/136238893-1272665f-85ba-4eab-82ef-0924ef1b529b.png
 
 
 ## People 
