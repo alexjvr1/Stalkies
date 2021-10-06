@@ -28,6 +28,8 @@ Meiotic drive is ancestral but lost in the sister species
 
 [Helen Hipperson](https://www.sheffield.ac.uk/biosciences/people/academic-staff/helen-hipperson) - Sheffield. Leading analyses of genomic data
 
+[Christophe Dessimoz](https://lab.dessimoz.org/people/christophe-dessimoz) - Uni Lausanne & SIB. [OMA database of orthologs](https://omabrowser.org/oma/about/) - potentially for annotation. 
+
 
 ## Available data
 
