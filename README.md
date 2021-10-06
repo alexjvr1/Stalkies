@@ -53,7 +53,7 @@ sampled over ~10 years within ~10km from each other.
 
 ## Theories and questions: 
 
-#### 1. Series of verlapping inversions?
+#### 1. Series of overlapping inversions?
 
 US group working on Stalk-eyed flies: Gerald Wilkinson (Uni Maryland) 
 
@@ -68,6 +68,9 @@ Inversions are likely large based on microsat data.
 
 2) Can we find the break points of the inversions? Are they in coding regions? 
 
+(Need an annotated genome)
+
+InvBFM
 
 
 #### 3. Are inversions adaptive? 
@@ -79,6 +82,12 @@ Thus we expect these males to have a high mutational load and be poorer quality.
 They have a smaller gap between the eyes, which is less attractive to females. Thus they have fewer mating opportunites. They don't deliver more sperm per insemination. But they have much bigger testes. 
 
 
+3) Do we find an accumulation of mutations in the SR males? 
+
+Estimate mutational load in each dataset. (for different polymorphism classes- SNPs, indels, inversions?)
+
+Fst outlier analysis to find SNP differences between datasets. Is there more diversity within the SR males than between groups? 
+
 
 
 #### 4. mtDNA?
@@ -89,7 +98,7 @@ Greg Hurst and Stefanos: mitogenome
 
 
 
-## Possible analyses
+## Possible tools
 
 [InvBFM](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6585-1): Machine learning approach using features collected from several SV analyses to predict locations of SV. 
 
