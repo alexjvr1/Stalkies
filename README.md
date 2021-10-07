@@ -1,5 +1,7 @@
 # Genomic analysis of Stalk-eyed flies 
 
+[Stalkie_GoogleDoc](https://docs.google.com/document/d/1TT5HuJuPho5OCNKg7C28hcHOtwxHuN2BFG5LlgKJFnE/edit)
+
 Teleopsis dalmanni
 
 Karyotype (like Drosophila): 3 chromosomes
