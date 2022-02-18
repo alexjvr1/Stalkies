@@ -19,5 +19,12 @@ busco --version
 BUSCO 5.2.2
 ```
 
+Libraries to use: 
+```
+#See a list of all the available databases
+busco --list-datasets
 
+insecta_odb10
+diptera_odb10
+```
 
