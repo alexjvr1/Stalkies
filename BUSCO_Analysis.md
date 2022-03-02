@@ -28,3 +28,6 @@ insecta_odb10
 diptera_odb10
 ```
 
+The script to use is here: [BUSCO.sh](https://github.com/alexjvr1/Stalkies/blob/main/Scripts/BUSCO.sh)
+
+
