@@ -41,7 +41,7 @@ Meiotic drive is ancestral but lost in the sister species
 
 PacBio sequences + HiC. Assembled by Phase Genomics
 
-2) Wild type (non SR) genome being generated in Liverpool (Terry Burke and Helen Hipperson). 
+2) Wild type (ST) genome being generated in Liverpool (Terry Burke and Helen Hipperson). 
 
 Raw data available. Needs assembly
 
