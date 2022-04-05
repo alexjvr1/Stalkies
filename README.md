@@ -46,6 +46,9 @@ PacBio sequences + HiC. Assembled by Phase Genomics
 Raw data available. Needs assembly
 
 
+A genome has been assembled by Jerry Wilkinson in 2020: [BioRxiv paper](https://www.biorxiv.org/content/10.1101/2020.09.23.310227v1.full)
+
+
 ### 100 WGS wild flies
 
 50:50 SR:wild (based on genetic markers, but genetic markers were developed in inbred lab strains, so we're uncertain if all 50 are def SR). 
