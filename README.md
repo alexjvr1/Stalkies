@@ -112,3 +112,13 @@ Greg Hurst and Stefanos: mitogenome
 
 [Howe et al. (2021) Significantly improving the quality of genome assemblies through curation. Gigascience](https://academic.oup.com/gigascience/article/10/1/giaa153/6072294?login=true)
 
+
+Check genome quality: 
+
+1) Proportion of BUSCO genes represented
+
+2) Proportion BUSCO genes in unscaffolded contigs
+
+3) Map genome to a) sister species b) draft of the same species
+
+4) What stats? 
