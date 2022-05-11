@@ -108,5 +108,7 @@ Greg Hurst and Stefanos: mitogenome
 [InvBFM](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6585-1): Machine learning approach using features collected from several SV analyses to predict locations of SV. 
 
 
+## Genome assembly and annotation
 
+[Howe et al. (2021) Significantly improving the quality of genome assemblies through curation. Gigascience](https://academic.oup.com/gigascience/article/10/1/giaa153/6072294?login=true)
 
