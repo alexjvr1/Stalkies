@@ -112,6 +112,8 @@ Greg Hurst and Stefanos: mitogenome
 
 [Howe et al. (2021) Significantly improving the quality of genome assemblies through curation. Gigascience](https://academic.oup.com/gigascience/article/10/1/giaa153/6072294?login=true)
 
+Paper outlining the recommended genome assembly, checking, and polishing pipeline as used by DToL and others. 
+
 
 Check genome quality: 
 
@@ -122,3 +124,64 @@ Check genome quality:
 3) Map genome to a) sister species b) draft of the same species
 
 4) What stats? 
+
+
+
+## Pipeline
+
+Pipeline used for assembling the genome and checking the quality based on the Howe et al. 2021 recommendations. 
+
+### 1. Raw Data
+
+1. Check for contaminants (vectors, adapters, organelles)
+
+2. Assemble mtDNA genome using Organelle-PBA specifically designed for PacBio data. 
+
+Paper [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5219736/); and software [here](https://github.com/aubombarely/Organelle_PBA) 
+
+### 2. Automated assembly
+
+1. False duplicates removed (dedup
+
+2. Contaminants removed
+
+3. Trailing Ns removed
+
+4. Kmer spectrum fits expectations
+
+5. Haplotypes correctly assorted (if fully haplotype resolved)
+
+6. Organelle genomes produced with dedicated pipeline
+
+7. Polishing reliable (NUMTS/NUPTS preserved and frameshifts corrected)
+
+8. Organelle genomes as unintended byproduct of assembly identified and removed. 
+
+## 3. Cleaned assembly
+
+1. All available raw data aligned, discrepancies marked up
+
+2. All available data from other sources aligned. Discrepancies marked up
+
+3. Discrepancies assessed and corrected where necessary
+
+    a) misjoins broken
+    
+    b) missing joins made
+    
+    c) inversions reoriented
+    
+    d) false duplications removed
+    
+    
+## 4. Structural corrections
+
+1. Crhomosome level units identified and named
+
+2. Sex chromosomes identified and named
+
+3. unlocalised units identified and named
+
+4. organelle genomes named. 
+
+## 5. Submission to archive
