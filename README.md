@@ -43,7 +43,7 @@ PacBio sequences + HiC. Assembled by Phase Genomics
 
 2) Wild type (ST) genome being generated in Liverpool (Terry Burke and Helen Hipperson). 
 
-Raw data available. Needs assembly
+Raw data available (PacBio HiFi reads x 2 cells). Needs assembly
 
 
 A genome has been assembled by Jerry Wilkinson in 2020: [BioRxiv paper](https://www.biorxiv.org/content/10.1101/2020.09.23.310227v1.full)
