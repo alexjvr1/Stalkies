@@ -131,6 +131,8 @@ Check genome quality:
 
 Pipeline used for assembling the genome and checking the quality based on the Howe et al. 2021 recommendations. 
 
+See the DToL [Pararge aegeria genome note](https://d212y8ha88k086.cloudfront.net/manuscripts/19102/f440c634-7f02-4e43-a5aa-febe4b9336f7_17278_-_jonathan_threlfall.pdf?doi=10.12688/wellcomeopenres.17278.1&numberOfBrowsableCollections=9&numberOfBrowsableInstitutionalCollections=0&numberOfBrowsableGateways=14) for an example of their pipeline. 
+
 ### 1. Raw Data 
 
 These checks can be done at the start with the raw data or after assembly to remove contaminants.
@@ -140,6 +142,8 @@ These checks can be done at the start with the raw data or after assembly to rem
 2. Assemble mtDNA genome using Organelle-PBA specifically designed for PacBio data or [MitoHiFi](https://github.com/marcelauliano/MitoHiFi) designed for HiFi reads. 
 
 Organelle_PBA paper [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5219736/); and software [here](https://github.com/aubombarely/Organelle_PBA) 
+
+Or map raw reads to an available mitogenome (sister species or same species, or combine all available references in a single reference fasta file). Use [minimap2](https://github.com/lh3/minimap2) to map and extract the scaffolds that match the reference mitogenomes. 
 
 ### 2. Automated assembly
 
