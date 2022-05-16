@@ -131,15 +131,21 @@ Check genome quality:
 
 Pipeline used for assembling the genome and checking the quality based on the Howe et al. 2021 recommendations. 
 
-### 1. Raw Data
+### 1. Raw Data 
+
+These checks can be done at the start with the raw data or after assembly to remove contaminants.
 
 1. Check for contaminants (vectors, adapters, organelles)
 
-2. Assemble mtDNA genome using Organelle-PBA specifically designed for PacBio data. 
+2. Assemble mtDNA genome using Organelle-PBA specifically designed for PacBio data or [MitoHiFi](https://github.com/marcelauliano/MitoHiFi) designed for HiFi reads. 
 
-Paper [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5219736/); and software [here](https://github.com/aubombarely/Organelle_PBA) 
+Organelle_PBA paper [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5219736/); and software [here](https://github.com/aubombarely/Organelle_PBA) 
 
 ### 2. Automated assembly
+
+Assemble HiFi reads using [HiFiasm](https://github.com/chhylp123/hifiasm#limit)
+
+This is the recommended software given HiFi reads. See [here]() for a comparison of assembler performance. 
 
 1. False duplicates removed (dedup
 
