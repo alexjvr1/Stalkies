@@ -147,25 +147,25 @@ Or map raw reads to an available mitogenome (sister species or same species, or 
 
 ### 2. Automated assembly
 
-Assemble HiFi reads using [HiFiasm](https://github.com/chhylp123/hifiasm#limit)
+1. Assemble HiFi reads using [HiFiasm](https://github.com/chhylp123/hifiasm#limit)
 
 This is the recommended software given HiFi reads. See [here]() for a comparison of assembler performance. 
 
-1. False duplicates removed (dedup
+2. Haplotypic duplications identified and removed using purge_dups. 
 
-2. Contaminants removed
+3. Contaminants removed ([Blobtoolkit](https://github.com/blobtoolkit/blobtoolkit))
 
-3. Trailing Ns removed
+4. Trailing Ns removed 
 
-4. Kmer spectrum fits expectations
+5. Kmer spectrum fits expectations 
 
-5. Haplotypes correctly assorted (if fully haplotype resolved)
+6. Haplotypes correctly assorted (if fully haplotype resolved) 
 
-6. Organelle genomes produced with dedicated pipeline
+7. Polishing reliable (NUMTS/NUPTS preserved and frameshifts corrected). 
 
-7. Polishing reliable (NUMTS/NUPTS preserved and frameshifts corrected)
+    - One round of polishing where the genome is mapped against 1) a draft of the same species, 2) sister species, 3) SNPs called. 
 
-8. Organelle genomes as unintended byproduct of assembly identified and removed. 
+8. Organelle genomes as unintended byproduct of assembly identified and removed (see MitoHiFi above)
 
 ## 3. Cleaned assembly
 
