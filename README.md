@@ -150,9 +150,11 @@ Or map raw reads to an available mitogenome (sister species or same species, or 
 
 1. Assemble HiFi reads using [HiFiasm](https://github.com/chhylp123/hifiasm#limit)
 
-This is the recommended software given HiFi reads. See [here]() for a comparison of assembler performance. 
+This is the recommended software given HiFi reads. See preprint [here](https://www.biorxiv.org/content/10.1101/2022.02.15.480579v2) for a comparison of assembler performance. 
 
-2. Haplotypic duplications identified and removed using purge_dups. 
+*"We found that centromeres and rDNA clusters are responsible for 71% of contig breaks in the CLR scaffolds, while relatively short stretches of GA/TC repeats are at the core of >85% of the unfilled gaps in our best HiFi assemblies."*
+
+2. Haplotypic duplications identified and removed using [purge_dups](https://github.com/dfguan/purge_dups). 
 
 3. Contaminants removed ([Blobtoolkit](https://github.com/blobtoolkit/blobtoolkit))
 
