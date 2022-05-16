@@ -147,6 +147,7 @@ Or map raw reads to an available mitogenome (sister species or same species, or 
 
 ### 2. Automated assembly
 
+
 1. Assemble HiFi reads using [HiFiasm](https://github.com/chhylp123/hifiasm#limit)
 
 This is the recommended software given HiFi reads. See [here]() for a comparison of assembler performance. 
