@@ -16,6 +16,17 @@ Dependencies
 |samtools|1.9|*see below*|
 |Minimap2|2-2.24|/SAN/ugi/StalkieGenomics/software/minimap2-2.24_x64-linux/minimap2|
 
+
+All software:
+```
+export PATH=$PATH:/share/apps/genomics/blast-2.10.0+/bin/
+export PATH=$PATH:/SAN/ugi/StalkieGenomics/software/MitoFinder
+export PATH=$PATH:/share/apps/genomics/mafft-7.453/bin/mafft
+export PATH=$PATH:/SAN/ugi/StalkieGenomics/software/hifiasm
+export PATH=$PATH:/share/apps/genomics/cd-hit-v4.6.8-2017-0621
+export PATH=$PATH:/SAN/ugi/StalkieGenomics/software/minimap2-2.24_x64-linux/
+```
+
 samtools
 ```
 export PATH=/share/apps/genomics/samtools-1.9/bin:$PATH
@@ -28,6 +39,7 @@ export PATH=/share/apps/python-3.8.5-shared/bin:$PATH
 export LD_LIBRARY_PATH=/share/apps/python-3.8.5-shared/lib:$LD_LIBRARY_PATH
 
 ```
+
 
 Run MitoHiFi: 
 ```
@@ -51,6 +63,5 @@ I'm not sure this is the best genome, but we'll try it out.
 
 Run MitoHiFi
 ```
-python3 mitohifi.py -r ../../STgenome_rawdata/HiFi/m64157e_210730_141553.hifi_reads.fasta.gz ../../STgenome_rawdata/HiFi/m64157e_211024_013127.hifi_reads.fasta.gz -f ../../RefGenomes/mtDNA_TdalWilk_Dmel.fas -o 5 -d
-
+python3 mitohifi.py -r ../../STgenome_rawdata/HiFi/unzipped/m64157e_210730_141553.hifi_reads.fasta -r ../../STgenome_rawdata/HiFi/unzipped/m64157e_211024_013127.hifi_reads.fasta -f ../../RefGenomes/NC_059897.1.fasta -g ../../RefGenomes/NC_059897.1.gb -o 5 -d -t1
 ```
