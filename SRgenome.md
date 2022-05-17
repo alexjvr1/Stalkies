@@ -30,7 +30,7 @@ blobtoolkit v3.1.6
 ```
 
 
-Create a folder with initial stats: 
+a)Create a folder with initial stats: 
 ```
 /SAN/ugi/StalkieGenomics/SRgenome
 
@@ -38,6 +38,11 @@ Create a folder with initial stats:
 Loading sequences from POM_SR_FULL.fasta
 ```
 
+b)We need depth data. Use minimap2 to map raw CLR reads back to draft genome (which includes unincorporated scaffolds)
+```
+/SAN/ugi/StalkieGenomics/software/minimap2-2.24_x64-linux/minimap2 -ax map-pb POM_SR_FULL.fasta ../SRgenome_rawdata/*fasta > SRgenome_SelfAln_minimap2.sam
+
+```
 
 
 
