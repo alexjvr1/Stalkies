@@ -28,3 +28,29 @@ export PATH=/share/apps/python-3.8.5-shared/bin:$PATH
 export LD_LIBRARY_PATH=/share/apps/python-3.8.5-shared/lib:$LD_LIBRARY_PATH
 
 ```
+
+Run MitoHiFi: 
+```
+python3 mitohifi.py --help
+```
+
+Download the relevant mitochondrial genomes: 
+```
+findMitoReference.py --species "Teleopsis dalmanni" --email a.jvrensburg@ucl.ac.uk --outfolder /SAN/ugi/StalkieGenomics/RefGenomes --min_length 16000
+
+Looking for mitochondrion for Teleopsis dalmanni
+Mito for the same species is not found
+Looking among close species
+output is written to /SAN/ugi/StalkieGenomics/RefGenomes/NC_059897.1.[gb,fasta]
+```
+
+MitoHiFi has selected the mitogenome of Nothybus sumatranus (Diptera:Nothybidae)
+
+I'm not sure this is the best genome, but we'll try it out. 
+
+
+Run MitoHiFi
+```
+python3 mitohifi.py -r ../../STgenome_rawdata/HiFi/m64157e_210730_141553.hifi_reads.fasta.gz ../../STgenome_rawdata/HiFi/m64157e_211024_013127.hifi_reads.fasta.gz -f ../../RefGenomes/mtDNA_TdalWilk_Dmel.fas -o 5 -d
+
+```
