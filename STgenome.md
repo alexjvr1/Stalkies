@@ -51,7 +51,7 @@ for i in $(ls *gfa); do ../software/gfatools/gfatools gfa2fa $i > $i.fas; done
 
 HiFiasm prints out the Kmer distribution as estimated with Jellyfish. This can be found in the log file. 
 
-[alt_txt][kmerdist]
+![alt_txt][kmerdist]
 
 [kmerdist]:https://user-images.githubusercontent.com/12142475/169043417-a27424e3-ab04-4fc5-ba0e-c4f983791627.png
 
