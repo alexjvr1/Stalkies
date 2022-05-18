@@ -47,3 +47,22 @@ for i in $(ls *gfa); do ../software/gfatools/gfatools gfa2fa $i > $i.fas; done
 ```
 
 
+# Kmer distribution
+
+HiFiasm prints out the Kmer distribution as estimated with Jellyfish. This can be found in the log file. 
+
+[alt_txt][kmerdist]
+
+[kmerdist]:https://user-images.githubusercontent.com/12142475/169043417-a27424e3-ab04-4fc5-ba0e-c4f983791627.png
+
+
+See [Issue 93](https://github.com/chhylp123/hifiasm/issues/93): This Kmer distribution can be caused either by high heterozygosity, or contamination. 
+
+Suggestions: 
+
+1) Use [Genomescope](https://bioinformaticsworkbook.org/dataAnalysis/GenomeAssembly/genomescope.html#gsc.tab=0) to plot the kmer distribution after estimating it with Jellyfish. 
+
+2) Estimate the levels of contamination with Blobtools
+
+3) Extract mitochondrial reads (I'm using MitoHiFi for this). 
+
