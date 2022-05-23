@@ -66,3 +66,42 @@ Suggestions:
 
 3) Extract mitochondrial reads (I'm using MitoHiFi for this). 
 
+
+## Blobtools
+
+Required files
+
+1) Assembly (.fna) - DONE
+
+2) Coverage estimate (.bam): 
+```
+##For a de novo assembly this is created by mapping the raw reads back to the de novo assembly using a long read mapper like minimap2
+
+## pwd
+/SAN/ugi/StalkieGenomics/STgenome/
+
+## 1) Index the reference genome
+../software/minimap2-2.24_x64-linux/minimap2 STgenome_220510.asm.p_ctg.fas -d STgenome_220510.asm.p_ctg.fas.fai
+[M::mm_idx_gen::23.300*1.59] collected minimizers
+[M::mm_idx_gen::27.878*1.82] sorted minimizers
+[M::main::32.083*1.71] loaded/built the index for 2932 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 2932
+[M::mm_idx_stat::32.758*1.69] distinct minimizers: 43723498 (57.61% are singletons); average occurrences: 2.822; average spacing: 5.331; total length: 657806061
+[M::main] Version: 2.24-r1122
+[M::main] CMD: ../software/minimap2-2.24_x64-linux/minimap2 -d STgenome_220510.asm.p_ctg.fas.fai STgenome_220510.asm.p_ctg.fas
+[M::main] Real time: 33.701 sec; CPU: 55.783 sec; Peak RSS: 4.017 GB
+
+
+## 2) Map all the raw reads back to the genome. Multiple input can either be mapped separately and bams concatenated after, all fasta files can be concatenated and then mapped. Or they can all be mapped simultaneously. 
+
+## minimap_STgenome_vs_HiFi.sh
+
+time $minimap2 -ax map-hifi $REF -d $REF.fai \
+$INPUTREADS/m64157e_210730_141553.hifi_reads.fasta.gz \
+$INPUTREADS/m64157e_210730_141553.hifi_reads.fastq.gz \
+$INPUTREADS/m64157e_211024_013127.hifi_reads.fasta.gz \
+$INPUTREADS/m64157e_211024_013127.hifi_reads.fastq.gz > $OUT.aln.paf
+
+```
+
+3) 
