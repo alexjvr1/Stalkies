@@ -104,4 +104,6 @@ $INPUTREADS/m64157e_211024_013127.hifi_reads.fastq.gz > $OUT.aln.paf
 
 ```
 
-3) 
+3) Hits file
+
+Blast 
