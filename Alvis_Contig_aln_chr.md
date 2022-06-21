@@ -27,4 +27,16 @@ BP6:
 BP7: 
 
 
+```
+pwd
+/SAN/ugi/StalkieGenomics/SRgenome
 
+export PATH=/share/apps/java/bin:$PATH
+export LD_LIBRARY_PATH=/share/apps/java/lib:$LD_LIBRARY_PATH
+
+ALGNMENT=map_POM_SR_FULL_to_GCF_002237135.1_ASM223713v2_genomic.paf
+
+java -jar alvis/dist/Alvis.jar -type contig -inputfmt paf -outputfmt svg \
+-alignmentQueryName ctg33 -alignmentTargetName \
+-in -outdir -out ContigAln_ctg33
+```
