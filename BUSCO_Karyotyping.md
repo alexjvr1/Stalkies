@@ -6,7 +6,7 @@ Checking on the order and presence of BUSCO genes in 1) our SR genome, and 2) Ge
 I'm using Sam Whiteford's program to do this: [BUSCO Karyotyping](https://github.com/swomics/BUSCO_karyotyping)
 
 
-First run a BUSCO analysis for all three genomes: 
+First run a BUSCO analysis for all three genomes by modifing the [BUSCO.sh](https://github.com/alexjvr1/Stalkies/blob/main/Scripts/BUSCO.sh) script: 
 
 1) Our reference genome will be D.melanogaster [GCF_000001215.4_Release_6_plus_ISO1_MT_genomic.fna](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001215.4/)
 
@@ -14,7 +14,9 @@ First run a BUSCO analysis for all three genomes:
 
 3) Our SR genome: 
 
-*Note: BUSCO requires unzipped fasta inputs (.fasta, .fna)*
+*Note1: BUSCO requires unzipped fasta inputs (.fasta, .fna)*
+
+*Note2: If the database is specified (e.g. diptera_odb10), BUSCO will look for a it in the following path in your working dir: busco_downloads/lineages/diptera_odb10*
 
 
 
