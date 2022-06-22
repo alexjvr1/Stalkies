@@ -28,6 +28,21 @@ The paf alignment tags are defined in the [minimap2 manual](https://lh3.github.i
 |dv|Approximate per-base sequence divergence|
 |rl|Length of query regions harboring repetitive seeds|
 
-```
 
 ```
+#Plot the per base sequence divergence vs alignment length
+
+ggplot(ali, aes(alen, dv)) + 
+    geom_point(alpha=0.6, colour="steelblue", size=2) + 
+    scale_x_continuous("Alignment length (kb)", label =  function(x) x/ 1e3) +
+    scale_y_continuous("Per base divergence") + 
+    theme_pubr()
+
+```
+
+
+![alt_txt][Fig1]
+
+[Fig1]:https://user-images.githubusercontent.com/12142475/174992267-63b57fe0-c15a-4eab-9e32-6de6b52d15d5.png
+
+
