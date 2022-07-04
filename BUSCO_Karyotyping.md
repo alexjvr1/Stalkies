@@ -73,4 +73,16 @@ ggplot(Tdel_joined[which(Tdel_joined$Sequence=="ChrX"),], aes(x=Species, y=GeneS
 dev.off()
 ```
 
+![alt_txt][Fig1]
+
+[Fig1]:https://user-images.githubusercontent.com/12142475/177119745-4166bb4b-5cbb-4964-808a-012eeddec050.png
+
+
+
+
+Create a plot with all three species aligned: 
+```
+
+```
+
 
