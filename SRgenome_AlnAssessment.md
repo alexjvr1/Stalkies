@@ -124,7 +124,8 @@ dev.off()
 
 ```
 
-For example
+
+These are the 8 contigs that show convincing inversions. As an example: 
 
 ![alt_txt][Fig3]
 
