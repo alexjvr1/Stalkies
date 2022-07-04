@@ -82,7 +82,25 @@ dev.off()
 
 Create a plot with all three species aligned: 
 ```
+#rescale position
+library(scales)
+Dmel_overlap_relativeStart$RescaledPos <- rescale(Dmel_overlap_relativeStart$Pos, to =c(0,600))
+TdelSR_overlap_relativeStart$RescaledPos <- rescale(TdelSR_overlap_relativeStart$Pos, to =c(0,600))
+TdelW_overlap_relativeStart$RescaledPos <- rescale(TdelW_overlap_relativeStart$Pos, to =c(0,600))
 
+#Create a joined dataframe
+TdelSR_Dmel_W_joined <- dplyr::bind_rows(TdelSR_overlap_relativeStart, Dmel_overlap_relativeStart, TdelW_overlap_relativeStart)
+
+#Keep only the chromosomes
+TdelSR_Dmel_W_joined2 <- TdelSR_Dmel_W_joined %>% filter(grepl("Chr", Sequence))
+TdelSR_Dmel_W_joined2$Species <- factor(TdelSR_Dmel_W_joined2$Species, levels=c("Dmel", "TdelSR", "TdelW"))
+
+pdf("KaryotypePlot_Dmel_SR_STWilk.pdf")
+ggplot(TdelSR_Dmel_W_joined2, aes(x=Species, y=RescaledPos))+geom_point()+geom_line(aes(group=Buscoid, colour=Sequence), alpha=0.4)
+dev.off()
 ```
 
 
+![alt_txt][Fig2]
+
+[Fig2]:https://user-images.githubusercontent.com/12142475/177120955-2ad33290-f125-4d27-b7c7-b56940d86948.png
