@@ -79,10 +79,14 @@ pafr object with 4873 alignments (461Mb)
 ```
 
 
-Plot these
+Plot the alignment
+```
+dotplot(long_ali, label_seqs=TRUE, order_by="qstart") + theme_bw()
 ```
 
-```
+![alt_txt][Fig1]
+
+[Fig1]:https://user-images.githubusercontent.com/12142475/177125072-a6fcdc4d-9e66-4703-b60a-6e4bff105741.png
 
 
 # X chr
@@ -102,6 +106,29 @@ POMSR_Xcontigs_vs_T.dalmaniiST_Wilk2020.minimap.aln.paf
 ```
 /SAN/ugi/StalkieGenomics/SRgenome/SRgenome_contigs_ctgonly.bed
 ```
+
+
+And plot using the synteny function from pafr: 
+```
+pdf("syntenyplot_SRX.pdf")
+plot_synteny(long_ali, q_chrom="ctg29", t_chrom="NC_051848.1", centre=T, rc=F)+theme_bw()
+plot_synteny(long_ali, q_chrom="ctg33", t_chrom="NC_051848.1", centre=T, rc=F)+theme_bw()
+plot_synteny(long_ali, q_chrom="ctg6", t_chrom="NC_051848.1", centre=T, rc=F)+theme_bw()
+plot_synteny(long_ali, q_chrom="ctg12", t_chrom="NC_051848.1", centre=T, rc=F)+theme_bw()
+plot_synteny(long_ali, q_chrom="ctg26", t_chrom="NC_051848.1", centre=T, rc=F)+theme_bw()
+plot_synteny(long_ali, q_chrom="ctg59", t_chrom="NC_051848.1", centre=T, rc=F)+theme_bw()
+plot_synteny(long_ali, q_chrom="ctg97", t_chrom="NC_051848.1", centre=T, rc=F)+theme_bw()
+plot_synteny(long_ali, q_chrom="ctg106", t_chrom="NC_051848.1", centre=T, rc=F)+theme_bw()
+plot_coverage(aliX_intContigs, fill="qname")
+dev.off()
+
+```
+
+For example
+
+![alt_txt][Fig2]
+
+[Fig2]:https://user-images.githubusercontent.com/12142475/177124031-923df5da-89df-4ffe-8997-96471fdb82d6.png
 
 
 
