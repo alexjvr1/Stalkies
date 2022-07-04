@@ -66,3 +66,68 @@ Dependencies and versions:
 ```
 
 This is similar to results from the previous assembly (89%). But still less than the US genome: 96%
+
+But the US ST genome was run using a previous BUSCO database. 
+
+## ST Wilk new BUSCO
+
+Using the diptera_odb10 
+
+```
+#Job submitted here: 
+/SAN/ugi/StalkieGenomics/RefGenome
+
+#Log file here
+/home/ajansen
+
+2022-06-23 00:58:11 INFO:	Results:	C:97.0%[S:77.7%,D:19.3%],F:0.8%,M:2.2%,n:3285	   
+
+2022-06-23 00:58:28 INFO:	
+
+	--------------------------------------------------
+	|Results from dataset diptera_odb10               |
+	--------------------------------------------------
+	|C:97.0%[S:77.7%,D:19.3%],F:0.8%,M:2.2%,n:3285    |
+	|3189	Complete BUSCOs (C)                       |
+	|2554	Complete and single-copy BUSCOs (S)       |
+	|635	Complete and duplicated BUSCOs (D)        |
+	|25	Fragmented BUSCOs (F)                     |
+	|71	Missing BUSCOs (M)                        |
+	|3285	Total BUSCO groups searched               |
+	--------------------------------------------------
+2022-06-23 00:58:28 INFO:	BUSCO analysis done. Total running time: 28486 seconds
+```
+
+There's a huge number of duplicate genes included in the final count! 
+
+
+## Dmel
+
+Busco run for Dmelanogaster: 
+
+```
+#Job submitted here: 
+/SAN/ugi/StalkieGenomics/RefGenome
+
+#Log file here: 
+/home/ajansen
+cat Busco.Dmel.o4716386
+
+2022-06-22 18:51:15 INFO:	Results:	C:98.7%[S:98.4%,D:0.3%],F:0.5%,M:0.8%,n:3285	   
+
+2022-06-22 18:51:24 INFO:	
+
+	--------------------------------------------------
+	|Results from dataset diptera_odb10               |
+	--------------------------------------------------
+	|C:98.7%[S:98.4%,D:0.3%],F:0.5%,M:0.8%,n:3285     |
+	|3243	Complete BUSCOs (C)                       |
+	|3233	Complete and single-copy BUSCOs (S)       |
+	|10	Complete and duplicated BUSCOs (D)        |
+	|16	Fragmented BUSCOs (F)                     |
+	|26	Missing BUSCOs (M)                        |
+	|3285	Total BUSCO groups searched               |
+	--------------------------------------------------
+2022-06-22 18:51:24 INFO:	BUSCO analysis done. Total running time: 6463 seconds
+```
+
