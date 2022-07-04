@@ -84,9 +84,9 @@ Plot the alignment
 dotplot(long_ali, label_seqs=TRUE, order_by="qstart") + theme_bw()
 ```
 
-![alt_txt][Fig1]
+![alt_txt][Fig2]
 
-[Fig1]:https://user-images.githubusercontent.com/12142475/177125072-a6fcdc4d-9e66-4703-b60a-6e4bff105741.png
+[Fig2]:https://user-images.githubusercontent.com/12142475/177125072-a6fcdc4d-9e66-4703-b60a-6e4bff105741.png
 
 
 # X chr
@@ -126,9 +126,9 @@ dev.off()
 
 For example
 
-![alt_txt][Fig2]
+![alt_txt][Fig3]
 
-[Fig2]:https://user-images.githubusercontent.com/12142475/177124031-923df5da-89df-4ffe-8997-96471fdb82d6.png
+[Fig3]:https://user-images.githubusercontent.com/12142475/177124031-923df5da-89df-4ffe-8997-96471fdb82d6.png
 
 
 
