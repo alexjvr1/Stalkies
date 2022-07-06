@@ -27,3 +27,11 @@ I'm following the methods in [this paper](https://onlinelibrary.wiley.com/doi/fu
 
 
 Circos figure1 in [this](https://onlinelibrary.wiley.com/doi/epdf/10.1111/1755-0998.13240?saml_referrer) paper is good. 
+
+
+## Installation
+
+Install RepeatModeler and dependencies as described [here](http://www.repeatmasker.org/RepeatModeler/)
+
+
+
