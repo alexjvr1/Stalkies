@@ -47,6 +47,7 @@ TRF=/SAN/ugi/StalkieGenomics/software/trf409.linux64
 LTRRETRIEVER=/SAN/ugi/StalkieGenomics/software/LTR_retriever-2.9.0/LTR_retriever
 MAFFT=/share/apps/genomics/mafft-7.453/bin/mafft
 CD_HIT=/share/apps/genomics/cd-hit-v4.6.8-2017-0621/cd-hit
+ABBLAST=/SAN/ugi/StalkieGenomics/software/ab-blast-20200317-linux-x64/ab-blastn
 
 #NINJA
 export PATH=/share/apps/gcc-9.2.0/bin:$PATH
@@ -57,8 +58,6 @@ NINJA=/SAN/ugi/StalkieGenomics/software/NINJA-0.95-cluster_only/NINJA/Ninja_new
 ERRORS: 
 ```
 #RepeatMasker - still downloading the library! 
-
-#ABBLAST - still to download
 
 #Genometools install error
 /SAN/ugi/StalkieGenomics/software/genometools-1.5.9
