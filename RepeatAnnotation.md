@@ -29,9 +29,55 @@ I'm following the methods in [this paper](https://onlinelibrary.wiley.com/doi/fu
 Circos figure1 in [this](https://onlinelibrary.wiley.com/doi/epdf/10.1111/1755-0998.13240?saml_referrer) paper is good. 
 
 
-## Installation
+## Installation & Dependencies
 
 Install RepeatModeler and dependencies as described [here](http://www.repeatmasker.org/RepeatModeler/)
 
 
+
+```
+#perl
+export PATH=/share/apps/perl-5.30.0/bin:$PATH
+#RMBLAST
+export PATH=/SAN/ugi/StalkieGenomics/software/rmblast-2.11.0/bin:$PATH
+
+RECON=/SAN/ugi/StalkieGenomics/software/RECON-1.08/scripts/recon.pl 
+RepeatScout=/SAN/ugi/StalkieGenomics/software/RepeatScout/RepeatScout
+TRF=/SAN/ugi/StalkieGenomics/software/trf409.linux64 
+LTRRETRIEVER=/SAN/ugi/StalkieGenomics/software/LTR_retriever-2.9.0/LTR_retriever
+MAFFT=/share/apps/genomics/mafft-7.453/bin/mafft
+CD_HIT=/share/apps/genomics/cd-hit-v4.6.8-2017-0621/cd-hit
+
+#NINJA
+export PATH=/share/apps/gcc-9.2.0/bin:$PATH
+export LD_LIBRARY_PATH=/share/apps/gcc-9.2.0/lib64:$LD_LIBRARY_PATH
+NINJA=/SAN/ugi/StalkieGenomics/software/NINJA-0.95-cluster_only/NINJA/Ninja_new
+```
+
+ERRORS: 
+```
+#RepeatMasker - still downloading the library! 
+
+#ABBLAST - still to download
+
+#Genometools install error
+/SAN/ugi/StalkieGenomics/software/genometools-1.5.9
+make threads=yes
+[compile canvas_cairo.o]
+In file included from src/annotationsketch/canvas_cairo.c:34:0:
+/SAN/ugi/StalkieGenomics/software/genometools-1.5.9/src/annotationsketch/graphics_cairo_api.h:21:19: fatal error: cairo.h: No such file or directory
+ #include <cairo.h>
+                   ^
+compilation terminated.
+make: *** [obj/src/annotationsketch/canvas_cairo.o] Error 1
+```
+
+
+NINJA
+```
+export PATH=/share/apps/gcc-9.2.0/bin:$PATH
+export LD_LIBRARY_PATH=/share/apps/gcc-9.2.0/lib64:$LD_LIBRARY_PATH
+
+/SAN/ugi/StalkieGenomics/software/NINJA-0.95-cluster_only/NINJA/Ninja_new --help
+```
 
