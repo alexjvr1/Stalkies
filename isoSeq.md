@@ -57,7 +57,17 @@ It is also probably worth using NCBI blast to double check for contamination bef
 
 ### 1. Assess the completeness with BUSCO
 
-### 2. 
+### 2a. [Cogent](https://github.com/Magdoll/Cogent/wiki/Tutorial%3A-Using-Cogent-to-collapse-redundant-transcripts-in-absence-of-genome)  
+
+Find unique isoforms without a genome
+
+### 2b. [TAMA](https://github.com/GenomeRIK/tama)
+
+Find unique isoforms with a genome
 
 
-### 3. Assess cleaned dataset with BUSCO
+### 3. Assess cleaned datasets with BUSCO
+
+Cogent dataset
+
+Tama dataset
