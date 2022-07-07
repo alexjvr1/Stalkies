@@ -39,6 +39,22 @@ Luca
 
 ```
 
+Madeleine suggests: 
+```
+If you are getting more than double the expected transcripts, then I would guess that there are redundant transcripts in there. I think isoseq3 does generate some of the highest isoform content out of different long read assemblers - and sometimes generates more novel than reference match isoforms.
+
+I would use something like BUSCO to assess the completeness of your assembled transcripts. If you have read data - it would also be worth mapping these and looking at the coverage per transcript to see whether all 100k transcripts actually get read alignments. 
+
+And I think I would also try to some additional optimisation past the isoseq3 "polish" step to collapse and remove redundant transcripts/isoforms. Things have already moved on quite a bit from when I've done assemblies, but I've had a look and it seems like TAMA (https://github.com/GenomeRIK/tama) is best if you have a reference genome (not sure..?) and if not then you can use package called cogent (https://github.com/Magdoll/Cogent/wiki/Tutorial%3A-Using-Cogent-to-collapse-redundant-transcripts-in-absence-of-genome) which is designed to work with PacBio data and looks like it performs well.
+
+Had a bit of a read through different studies using isoseq3 assembly - and they show that performing an additional transcript collapse after the isoseq3 pipeline - with something like TAMA or cogent improves assembly completeness - assessed using BUSCO.
+
+It is also probably worth using NCBI blast to double check for contamination before running the collapse step. Just using BLASTn against the NCBI nucleotide database - and removing any transcripts that don't have significant sequence similarity to Diptera.
+
+```
+
+
+
 ### 1. Assess the completeness with BUSCO
 
 ### 2. 
