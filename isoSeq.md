@@ -74,6 +74,53 @@ For SR (there is a pile of SR homozygotes, and I assume that there are SR/Y male
 *** We produce SR/Y larvae from the cross SR/SR female x wildtype male - half are SR/Y and half are SR/X - I am not sure whether this cross is in operation right now. Can you find out. If this cross has not been enacted ….
 ```
 
+Sample1: 
+```
+/SAN/ugi/StalkieGenomics/isoSeq/LIMS27752IsoSeq_08ebf325e8366c31/IsoSeq/Sample1
+
+/share/apps/genomics/samtools-1.14/bin/samtools flagstat Sample1.collapsed.cdhit.0.97.srt.bam
+97690 + 0 in total (QC-passed reads + QC-failed reads)
+70978 + 0 primary
+24581 + 0 secondary
+2131 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+97681 + 0 mapped (99.99% : N/A)
+70969 + 0 primary mapped (99.99% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+```
+
+Sample2
+```
+/SAN/ugi/StalkieGenomics/isoSeq/LIMS27752IsoSeq_08ebf325e8366c31/IsoSeq/Sample2
+
+/share/apps/genomics/samtools-1.14/bin/samtools flagstat Sample2.collapsed.cdhit.0.97.srt.bam
+129884 + 0 in total (QC-passed reads + QC-failed reads)
+94961 + 0 primary
+32376 + 0 secondary
+2547 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+129740 + 0 mapped (99.89% : N/A)
+94817 + 0 primary mapped (99.85% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+```
+
 
 
 ### 1. Assess the completeness with BUSCO
