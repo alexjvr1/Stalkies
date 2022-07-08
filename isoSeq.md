@@ -163,6 +163,13 @@ $samtools view -h file.bam > file.sam
 
 ```
 
+submit the [tama.sh](https://github.com/alexjvr1/Stalkies/blob/main/tama.sh) script after modifying the input. 
+
+I'm using the Wilkinson genome initially as reference. 
+
+script runs in 6-7 minutes. 
+
+
 
 
 ### 3. Assess cleaned datasets with BUSCO
