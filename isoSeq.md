@@ -77,6 +77,7 @@ For SR (there is a pile of SR homozygotes, and I assume that there are SR/Y male
 Sample1: 
 ```
 #Nr of transcripts from UoLiv: 85,645
+#After tama: 66167
 
 /SAN/ugi/StalkieGenomics/isoSeq/LIMS27752IsoSeq_08ebf325e8366c31/IsoSeq/Sample1
 
@@ -103,6 +104,7 @@ Sample1:
 Sample2
 ```
 #Nr of transcripts from UoLiv: 113,461
+#After tama: 88239
 
 /SAN/ugi/StalkieGenomics/isoSeq/LIMS27752IsoSeq_08ebf325e8366c31/IsoSeq/Sample2
 
