@@ -153,9 +153,12 @@ except ImportError:
   from io import StringIO ## for Python 3
 ```
 
-Run tama
+Convert bam to sam  
 ```
+#tama by default takes a sam input file. bam can be specified (-b), but this didn't work for me. 
+#Convert bam to sam
 
+$samtools view -h file.bam > file.sam
 
 
 ```
