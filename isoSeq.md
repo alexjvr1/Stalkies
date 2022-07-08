@@ -56,19 +56,19 @@ It is also probably worth using NCBI blast to double check for contamination bef
 ## Samples
 
 ```
-Sample1: ST
+#Sample1: SR
+For SR (there is a pile of SR homozygotes, and I assume that there are SR/Y males)
+1. 3 adult SR hom females
+2. 3 adult SR/Y males
+3. 6 unknown sex late stage larvae that should contain SR/Y males***
 
+
+#Sample2: ST
 For ST
 1. 3 adult males
 2. 3 adult females
 3. 6 late stage larvae (probably should avoid pupae)
 
-#Sample2: SR
-
-For SR (there is a pile of SR homozygotes, and I assume that there are SR/Y males)
-1. 3 adult SR hom females
-2. 3 adult SR/Y males
-3. 6 unknown sex late stage larvae that should contain SR/Y males***
 
 ** adults should not be old worn out moron flies - young and frisky
 *** We produce SR/Y larvae from the cross SR/SR female x wildtype male - half are SR/Y and half are SR/X - I am not sure whether this cross is in operation right now. Can you find out. If this cross has not been enacted ….
