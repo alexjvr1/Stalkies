@@ -125,13 +125,10 @@ Sample2
 
 ### 1. Assess the completeness with BUSCO
 
-### 2a. [Cogent](https://github.com/Magdoll/Cogent/wiki/Tutorial%3A-Using-Cogent-to-collapse-redundant-transcripts-in-absence-of-genome)  
 
-Find unique isoforms without a genome
+### 2a. [TAMA](https://github.com/GenomeRIK/tama)
 
-### 2b. [TAMA](https://github.com/GenomeRIK/tama)
-
-Find unique isoforms with a genome
+Find unique isoforms with a genome. I'll use our SR genome for Sample2
 
 ```
 export PATH=/share/apps/python-3.10.0-shared/bin:$PATH
@@ -147,7 +144,21 @@ pip install biopython
 pip install pysam
 ```
 
+Edit of tama_collapse.py
+```
+#There's been a change in the naming system for the StringIO module. Tama assumes python2, but if python3 is being used we need to add the third line to the script: 
 
+  from StringIO import StringIO ## for Python 2
+except ImportError:
+  from io import StringIO ## for Python 3
+```
+
+Run tama
+```
+
+
+
+```
 
 
 
