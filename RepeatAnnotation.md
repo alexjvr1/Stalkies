@@ -52,11 +52,13 @@ ABBLAST=/SAN/ugi/StalkieGenomics/software/ab-blast-20200317-linux-x64/ab-blastn
 #NINJA
 export PATH=/share/apps/gcc-9.2.0/bin:$PATH
 export LD_LIBRARY_PATH=/share/apps/gcc-9.2.0/lib64:$LD_LIBRARY_PATH
-NINJA=/SAN/ugi/StalkieGenomics/software/NINJA-0.95-cluster_only/NINJA/Ninja_new
+NINJA=/SAN/ugi/StalkieGenomics/software/NINJA-0.95-cluster_only/NINJA/Ninja_new --help
+
 
 #RepeatMasker
 #This comes with a library of repeat elements, but a much better version is available online. 
 #This took 3.5 days to download ~350Gb 
+#Repbase can also be used, but this is behind a paywall of >$1500/annum
 #RepeatMasker needs perl to run
 
 wget -r -nH -np --reject="index.html*" --cut-dirs=1 https://www.dfam.org/releases/Dfam_3.6/
@@ -83,11 +85,5 @@ make: *** [obj/src/annotationsketch/canvas_cairo.o] Error 1
 ```
 
 
-NINJA
-```
-export PATH=/share/apps/gcc-9.2.0/bin:$PATH
-export LD_LIBRARY_PATH=/share/apps/gcc-9.2.0/lib64:$LD_LIBRARY_PATH
 
-/SAN/ugi/StalkieGenomics/software/NINJA-0.95-cluster_only/NINJA/Ninja_new --help
-```
 
