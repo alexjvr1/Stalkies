@@ -53,11 +53,22 @@ ABBLAST=/SAN/ugi/StalkieGenomics/software/ab-blast-20200317-linux-x64/ab-blastn
 export PATH=/share/apps/gcc-9.2.0/bin:$PATH
 export LD_LIBRARY_PATH=/share/apps/gcc-9.2.0/lib64:$LD_LIBRARY_PATH
 NINJA=/SAN/ugi/StalkieGenomics/software/NINJA-0.95-cluster_only/NINJA/Ninja_new
+
+#RepeatMasker
+#This comes with a library of repeat elements, but a much better version is available online. 
+#This took 3.5 days to download ~350Gb 
+#RepeatMasker needs perl to run
+
+wget -r -nH -np --reject="index.html*" --cut-dirs=1 https://www.dfam.org/releases/Dfam_3.6/
+du -sch /SAN/ugi/StalkieGenomics/software/RepeatMasker/Dfam_3.6
+
+export PATH=/share/apps/perl-5.30.0/bin:$PATH
+
 ```
 
 ERRORS: 
 ```
-#RepeatMasker - still downloading the library! 
+
 
 #Genometools install error
 /SAN/ugi/StalkieGenomics/software/genometools-1.5.9
