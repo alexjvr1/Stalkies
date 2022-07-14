@@ -85,5 +85,10 @@ make: *** [obj/src/annotationsketch/canvas_cairo.o] Error 1
 ```
 
 
+Once all the dependencies are installed, we can modify the config file before installing RepeatModeler: 
+```
+#Add paths to all the software before running config
+/SAN/ugi/StalkieGenomics/software/RepeatModeler-2.0.3/RepModelConfig.pm 
+```
 
 
