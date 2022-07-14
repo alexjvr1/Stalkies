@@ -48,3 +48,11 @@ rule all:
 	"STgenome_220510.asm.p_ctg.fasta"
 
 ```
+
+# ISSUES TO CORRECT
+
+See [here](https://github.com/blobtoolkit/pipeline/issues/13) for correcting the "KeyError" 
+
+What version of blobtoolkit are we using? 
+
+
