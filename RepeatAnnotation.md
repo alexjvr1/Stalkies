@@ -66,6 +66,8 @@ du -sch /SAN/ugi/StalkieGenomics/software/RepeatMasker/Dfam_3.6
 
 export PATH=/share/apps/perl-5.30.0/bin:$PATH
 
+#ucscTools
+rsync -aP rsync://hgdownload.soe.ucsc.edu/genome/admin/exe/linux.x86_64/ /SAN/ugi/StalkieGenomics/software/ucscTools
 ```
 
 ERRORS: 
