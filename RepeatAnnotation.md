@@ -91,6 +91,33 @@ Once all the dependencies are installed, we can modify the config file before in
 ```
 #Add paths to all the software before running config
 /SAN/ugi/StalkieGenomics/software/RepeatModeler-2.0.3/RepModelConfig.pm 
+
+#To configure we need perl
+export perl=/share/apps/perl-5.30.0/bin
+
+#This presented an error about a missing package JSON. 
+#Install perl packages locally with cpanm Module::name
+
+cpanm JSON
+
+###OUTPUT message:
+(base) [ajansen@pchuckle RepeatModeler-2.0.3]$ cpanm JSON
+!
+! Can't write to /share/apps/perl-5.30.0/lib/site_perl/5.30.0 and /share/apps/perl-5.30.0/bin: Installing modules to /home/ajansen/perl5
+! To turn off this warning, you have to do one of the following:
+!   - run me as a root or with --sudo option (to install to /share/apps/perl-5.30.0/lib/site_perl/5.30.0 and /share/apps/perl-5.30.0/bin)
+!   - Configure local::lib in your existing shell to set PERL_MM_OPT etc.
+!   - Install local::lib by running the following commands
+!
+!         cpanm --local-lib=~/perl5 local::lib && eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
+!
+JSON is up to date. (4.07)
+#############
+#This tells us that the package was installed locally to my home directory. 
+#We need to configure our paths to point to the local library. This is the default code, but modify for the server to point to our actual home directory: 
+#cpanm --local-lib=~/perl5 local::lib && eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
+cpanm --local-lib=/home/ajansen/perl5 local::lib && eval $(perl -I /home/ajansen/perl5/lib/perl5/ -Mlocal::lib)
+
 ```
 
 
