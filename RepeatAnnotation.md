@@ -121,3 +121,55 @@ cpanm --local-lib=/home/ajansen/perl5 local::lib && eval $(perl -I /home/ajansen
 ```
 
 
+
+## Install without cairo
+
+The cairo issue stops me from installing LTRHarvester. This is used for an extension of the RepeatModeler pipeline which identifies LTRs (long terminal repeats) much more effectively than the core program.
+
+To test out the program in the meantime I've configured it without this extension. 
+
+Run the program (in qrsh to build the database and test the run): 
+```
+/SAN/ugi/StalkieGenomics/Map_repeats
+
+/SAN/ugi/StalkieGenomics/software/RepeatModeler-2.0.3/BuildDatabase -name StalkieSR /SAN/ugi/StalkieGenomics/SRgenome/pomiankowski-tdalmanni.final.fasta
+
+##The database builds in ~2 minutes
+Building database StalkieSR:
+  Reading /SAN/ugi/StalkieGenomics/SRgenome/pomiankowski-tdalmanni.final.fasta...
+Number of sequences (bp) added to database: 3 ( 400176092 bp )
+```
+
+Test the run before creating a script: 
+```
+## This works, but I need to add -pa (number of parallel jobs). 
+../software/RepeatModeler-2.0.3/RepeatModeler -database StalkieSR   
+
+```
+
+Script to submit
+```
+#!/bin/bash
+#$ -S /bin/bash
+#$ -N RepeatModeler_SR  ##job name
+#$ -l tmem=64G #RAM
+#$ -l h_vmem=64G #enforced limit on shell memory usage
+#$ -l h_rt=40:00:00 ##wall time.
+#$ -j y  #concatenates error and output files (with prefix job1)
+#$ -l tscratch=100G
+#$ -l avx2=yes
+#$ -pe mpi 40
+#$ -R y
+
+#Run on working directory
+cd $SGE_O_WORKDIR 
+
+#Software
+SOFTPATH=/SAN/ugi/StalkieGenomics/RepeatModeler-2.0.3
+WD=/SAN/ugi/StalkieGenomics/Map_repeats
+THREADS=30
+
+#Script
+time $SOFTPATH/RepeatModeler -database $WD/StalkieSR -pa 40
+
+```
