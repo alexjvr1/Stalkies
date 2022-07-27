@@ -6,10 +6,12 @@
 #$ -l h_rt=10:00:00 ##wall time.
 #$ -j y  #concatenates error and output files (with prefix job1)
 
-#############################################################
+##################################################################################
 # Update NCBI nt database to the latest version
-# This runs well in screen without submitting to the server
-#############################################################
+# Database is updated daily, so run this in the morning before the next update. 
+# This does not run well in screen or on the server. 
+# Better to run it in the interactive node (qrsh)
+##################################################################################
 
 ## Change to the directory with NCBI nt database:
 
