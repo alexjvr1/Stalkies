@@ -38,4 +38,5 @@ wc -l X_allvariants2
 test <- read.table("X_allvariants2", header=F)
 colnames(test) <- c("Chr", "Start", "Name", "Ref", "QUAL", "FILTER", "PRECISE", "SVTYPE", "SVLEN", "END", "SUPPORT", "COV.UPSTREAM", "COV.START", "COV.MIDDLE", "COV.END", "COV.DOWNSTREAM", "STRAND", "AF", "DR", "DV", "GT", "GQ")
 
+INV_precise.pass.SUPPORT50.SVLEN1000 <- test %>% filter(SVLEN > 1000) %>% filter(SUPPORT>50) %>% filter(SVTYPE=="INV") %>% filter(FILTER=="PASS") %>% filter(PRECISE=="PRECISE")
 ```
