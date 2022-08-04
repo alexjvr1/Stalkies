@@ -2,6 +2,8 @@
 
 Use this approach to identify and characterise inversion and SVs [Beyter et al. 2021](https://www.nature.com/articles/s41588-021-00865-4)
 
+GraphTyper for pan-genome approach to calling SVs [GraphTyper2](https://www.nature.com/articles/s41467-019-13341-9)
+
 
 1. Filter in Sniffles
 
