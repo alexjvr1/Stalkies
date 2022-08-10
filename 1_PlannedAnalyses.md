@@ -12,11 +12,15 @@ Sniffles pipeline. See [here]()
 Machine learning approach? 
 
 
-## 2) Are inversions promoted by CNVs? 
+## 2) Are inversions promoted by TEs? 
 
-Map CNVs and annotate. 
+Map TEs and annotate. 
+
+What types? 
 
 What are their functions? 
+
+Are they nearer genes than expected at random? See [here](https://www.biorxiv.org/content/10.1101/2022.04.14.488334v1.full.pdf)
 
 
 ## 3) What is the functional implication of these inversions? 
