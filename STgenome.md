@@ -67,6 +67,24 @@ Suggestions:
 3) Extract mitochondrial reads (I'm using MitoHiFi for this). 
 
 
+# Busco
+
+Results suggest that there is still duplicates in the assembly. 
+
+According to the HiFiasm developers the inbuilt purge_dup is not always effective with high heterozygosity. 
+
+Try 
+
+1) HiFiasm -l0 + purge_dups
+
+2) HiFiasm -l1 + purge_dups
+
+2) HiFiasm -l2 + purge_dups
+
+
+
+
+
 ## Blobtools
 
 Required files
