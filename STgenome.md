@@ -71,16 +71,9 @@ Suggestions:
 
 Results suggest that there is still duplicates in the assembly. 
 
-According to the HiFiasm developers the inbuilt purge_dup is not always effective with high heterozygosity. 
+According to the HiFiasm developers the inbuilt purge_dup is not always effective with high heterozygosity. See Heng Li's comments [here](https://github.com/chhylp123/hifiasm/issues/70)
 
-Try 
-
-1) HiFiasm -l0 + purge_dups
-
-2) HiFiasm -l1 + purge_dups
-
-2) HiFiasm -l2 + purge_dups
-
+Try to run purge_dups after running HiFiasm. 
 
 
 
