@@ -71,9 +71,14 @@ Suggestions:
 
 Results suggest that there is still duplicates in the assembly. 
 
+
+# Purge_dups
+
 According to the HiFiasm developers the inbuilt purge_dup is not always effective with high heterozygosity. See Heng Li's comments [here](https://github.com/chhylp123/hifiasm/issues/70)
 
-Try to run purge_dups after running HiFiasm. 
+The default purge_dups is -l3: 3 to purge all types of haplotigs in the most aggressive way
+
+However, a 33% duplication rate is extremely high! So rn purge_dups after running HiFiasm.
 
 
 
