@@ -45,6 +45,19 @@ PacBio sequences + HiC. Assembled by Phase Genomics
 
 Raw data available (PacBio HiFi reads x 2 cells). Needs assembly
 
+```
+zcat m64157e_211024_013127.hifi_reads.fasta.gz |grep -v ">" |awk '{x+=length($0)}END{print x}'
+
+7893963766
+
+zcat m64157e_210730_141553.hifi_reads.fasta.gz |grep -v ">" |awk '{x+=length($0)}END{print x}'
+12769157425
+
+Total = ~20Billion bases. Expected genome size = 438Mb
+
+Expected haploid coverage = 20Bil/438Mb = 45x
+```
+
 
 A genome has been assembled by Jerry Wilkinson in 2020: [BioRxiv paper](https://www.biorxiv.org/content/10.1101/2020.09.23.310227v1.full)
 
