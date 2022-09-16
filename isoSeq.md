@@ -128,11 +128,16 @@ Sample2
 ```
 
 
+### 1. BLAST to NCBI nt database
 
-### 1. Assess the completeness with BUSCO
+Remove any reads that don't match diptera
 
 
-### 2a. [TAMA](https://github.com/GenomeRIK/tama)
+
+### 2. Assess the completeness with BUSCO
+
+
+### 3a. [TAMA](https://github.com/GenomeRIK/tama)
 
 Find unique isoforms with a genome. I'll use our SR genome for Sample2
 
@@ -178,8 +183,29 @@ script runs in 6-7 minutes.
 
 
 
-### 3. Assess cleaned datasets with BUSCO
+### 4. Assess cleaned datasets with BUSCO
 
 Cogent dataset
 
 Tama dataset
+
+
+
+
+### 5. Map WGS data 
+
+Are there any isoforms with no/low mapping rate? 
+
+
+Remove
+
+
+
+### 6. Assess
+
+6a) Nr of reads
+
+
+6b) BUSCO
+
+
